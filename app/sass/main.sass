@@ -1,0 +1,103 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body 
+	font-family: arial,helvetica 
+	color: #333 
+	color: rgba(0,0,0,0.5) 
+h1 
+	font-size: 6em 
+p, h2 
+	font-size: 2em 
+h2 
+	color: inherit 
+.section 
+	text-align: center 
+	&.fp-auto-height 
+		padding: 0 !important 
+.section-wrapper 
+#menu 
+	position: fixed 
+	top: 0 
+	left: 0 
+	height: 40px 
+	z-index: 70 
+	width: 100% 
+	padding: 0 
+	margin: 0 
+	li 
+		display: inline-block 
+		margin: 10px 
+		color: #000 
+		background: #fff 
+		background: rgba(255,255,255, 0.5) 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		&.active 
+			background: #666 
+			background: rgba(0,0,0, 0.5) 
+			color: #fff 
+			a 
+				color: #fff 
+				&:hover 
+					color: #000 
+		a 
+			text-decoration: none 
+			color: #000 
+		&:hover 
+			background: rgba(255,255,255, 0.8) 
+#menu li a,
+#menu li.active a 
+	padding: 9px 18px 
+	display: block 
+#wrapper 
+	height: 100vh 
+	top: 0 
+	left: 0 
+	position: absolute 
+#header 
+	position: fixed 
+	width: 100% 
+	top: 0 
+	left: 0 
+	height: 100px 
+	background-color: white 
+	z-index: 100 
+
+
+ @import "media" // Всегда в конце
+
+
